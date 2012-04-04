@@ -117,26 +117,6 @@ var script = function() {
 	        }
 	    }
 	};
-
-	var initStyle = function() {
-		// spotifyLink style
-		//GM_addStyle('a.spotifyLink img { border:none !important; margin:0 0 0 3px !important; width:9px !important; height:9px !important; background:transparent !important; vertical-align:baseline !important; position:inherit !important; }');
-		// fix link position on Neighbours <http://www.lastfm.fr/user/lmalgras/neighbours>
-		//GM_addStyle('ul.artistsSquare a.spotifyLink img { margin:0 !important; }');
-		// fix link position on Charts <http://www.lastfm.fr/charts>
-		//GM_addStyle('.mediumChartWithImages li a.spotifyLink { margin-top:-12px; height:auto; }');
-		// hide duplicate link on Similar Artists <http://www.lastfm.fr/music/Moby/+similar>
-		//GM_addStyle('#page span.moduleOptions a.spotifyLink { display:none; }');
-		// TODO fix link position on Festival <http://www.last.fm/festival/1556719>
-		
-		// button
-        //GM_addStyle('#page a.spotifyButton strong { padding: 0; height: auto; }');
-        //GM_addStyle('#page a.spotifyButton strong span { background: url("' + spotifyIcon + '") no-repeat scroll 4px center transparent; }');
-        //GM_addStyle('#page a.spotifyButton:hover strong span { background-position: 4px center; }');
-        // fix buttons margin
-        //GM_addStyle('#page div.buttons a.lfmButton { margin-right: 5px; margin-bottom: 5px; }');
-        //GM_addStyle('#page div.buttons div.lfmDownloadButton a.lfmButton { margin-right: 0; }');
-	};
 	
 	var initEvent = function() {
 		// Add listener so if the content changes we add links to the new content
@@ -185,9 +165,7 @@ var script = function() {
 	
 	return {
 		init: function() {
-			initStyle();
-			initEvent();
-			
+			initEvent();			
 			initParentResource();
 			
 			// Find links and add spotify links to them

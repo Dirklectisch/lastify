@@ -1,0 +1,50 @@
+/* spotifyLink style */
+a.spotifyLink img { 
+    border:none !important;
+    margin:0 0 0 3px !important;
+    width:9px !important;
+    height:9px !important;
+    background:transparent !important;
+    vertical-align:baseline !important;
+    position:inherit !important;
+}
+
+/* fix link position on Neighbours <http://www.lastfm.fr/user/lmalgras/neighbours> */
+ul.artistsSquare a.spotifyLink img { 
+    margin:0 !important;
+}
+
+/* fix link position on Charts <http://www.lastfm.fr/charts> */
+.mediumChartWithImages li a.spotifyLink {
+    margin-top:-12px; height:auto;
+}
+
+/* hide duplicate link on Similar Artists <http://www.lastfm.fr/music/Moby/+similar> */
+#page span.moduleOptions a.spotifyLink {
+    display:none;
+}
+/* TODO fix link position on Festival <http://www.last.fm/festival/1556719> */
+
+/* button */
+#page a.spotifyButton strong {
+    padding: 0;
+    height: auto;
+}
+
+#page a.spotifyButton strong span {
+    background: url("'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjVJivzgAAAC6klEQVQ4T4WTW0iTcRjGHw9rm1uuMszTxNqwojTpZKUdFCtMV5MsXZZiIho1XSSbhzXPc+RhpXYwjcrSLC1NVxZ13UUXQTdB0H2X0V0Q9vRO0xKEPnj4f9/7f97f+/4PH7DEY7apQx0DGlPdoMpeO6isddzTnrG4NPqlvItikhhSP6R0u58Ff/c8D6RnPFikpHtCxeZxzc/aoeVjpe26uCVBJa2acPeo4kPHpIKdUyp2TWnZ5dPR6wuTMZydvghemYxg01jYN+v1VamLIHstimVNI8p3V30ato/r6BzU0XZTx8obK1l9J5zuUT27p43sfb2B3pfxAon4VtiiMyxAqvpCrN4XOmY71IzNBqMzMTvG+ZU19x6fG8T0ylBW3FrLjhfreenu6qlZQMKhgICGodDPva/0dAxE0doTydbHBnZO6Nk2tpJ1D4JZcg3MsIP6HFCxB9xaoqXraeRMlk1jREbxsrUdk2vY92ajaDMrbkbzqFPJtIvgftFBB3i8FbzQD14eBU93grltoG04gBaPohz5NeoD16ZjefttIhserWDKedDsAvPdYJ4YTfVgshWMOQluOgsWdYOXhsGKh+LxoBlmmyq1yxfLtgktm5+CLaI6MVQNivE+aBejv7J9CMwUcEYNeFHmL0g8twUNSM4Jiqp9qJ5xialxDCzwiq6Cxb1zssi32SPVuiTp3lyyVZLPCTzTjqLZjSzz4r3zCegS1QuoQUD1In9lf9wxApbKHlgEXCGdnH8AFl7HjyQzImcBJhty/S1XyUR6taw3Hww1gSuOgYYi8EgjWClV55PLpBOTE/0L98C4CwHp5zASchhE+h+lyTivfeBqARbeAMuldTmFL1tMCFt0G+O2Qa1MwihSQGOhbJYTPCDdRJ0QkMQg579c4FlOfNqRh7+38F9K/G4EGjNwKq8JH4t78KtM1l12B9xQAAYl4KsqHo0xCdD+96807ETg5kNYl5yPzF2ncCzxCBIN26FcKvE3MvNlJn4gMeAAAAAASUVORK5CYII='") no-repeat scroll 4px center transparent;
+}
+
+#page a.spotifyButton:hover strong span {
+    background-position: 4px center;
+}
+
+/* fix buttons margin */
+#page div.buttons a.lfmButton {
+    margin-right: 5px; 
+    margin-bottom: 5px;
+}
+
+#page div.buttons div.lfmDownloadButton a.lfmButton { 
+    margin-right: 0;
+}
